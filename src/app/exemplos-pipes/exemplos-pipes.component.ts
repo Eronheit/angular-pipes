@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExemplosPipesComponent implements OnInit {
 
+  filtro: string = '';
+
+  cursos: string[] = ['Java', 'Angular']
+
   livro: any = {
     titulo: 'Livro bom',
     rating: 4.54321,
@@ -19,6 +23,11 @@ export class ExemplosPipesComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  addCurso(valor: string) {
+    this.cursos.push(valor);
+    console.log(this.cursos);
   }
 
 }
