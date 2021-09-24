@@ -9,6 +9,7 @@ import { ExemplosPipesComponent } from './exemplos-pipes/exemplos-pipes.componen
 import { CamelCasePipe } from './camel-case.pipe';
 import { FiltroArrayPipe } from './filtro-array.pipe';
 import { FormsModule } from '@angular/forms';
+import { FiltroArrayImpuroPipe } from './filtro-array-impuro.pipe';
 
 registerLocaleData(ptBr); // necessário a partir do Angular v5
 
@@ -18,6 +19,7 @@ registerLocaleData(ptBr); // necessário a partir do Angular v5
     ExemplosPipesComponent,
     CamelCasePipe,
     FiltroArrayPipe,
+    FiltroArrayImpuroPipe,
   ],
   imports: [
     BrowserModule,
